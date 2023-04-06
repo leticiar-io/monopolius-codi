@@ -1,11 +1,14 @@
 import { Loading } from "./components/Loading";
 import { Header } from "./components/Header";
+import { MainSection } from "./components/layouts/MainSection";
 
 function App() {
   return (
     <div>
       <Header />
-       <Loading />
+
+      <MainSection />
+      <Loading />
     </div>
   );
 }
