@@ -1,0 +1,123 @@
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+
+  position: relative;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding: 2rem;
+  padding-bottom: 20rem;
+
+  background: transparent;
+}
+
+.companyName {
+  color: var(--gray-100);
+  font-weight: 400;
+  padding: 2rem 0rem 2rem 0rem;
+}
+
+.title {
+  color: var(--gray-100);
+  font-size: 4rem;
+}
+
+.sub:hover {
+  color: var(--cyan-600);
+  cursor: default;
+}
+
+.subtitle {
+  color: var(--gray-100);
+  font-weight: 400;
+  padding: 2rem 0rem 2rem 0rem;
+}
+
+.text a {
+  border: 1px solid var(--cyan-600);
+  border-radius: 5px;
+  color: var(--cyan-600);
+  width: 16.625rem;
+
+  padding: 2rem 0rem 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  transition: color 0.4s linear;
+}
+
+.btn:hover {
+  color: var(--gray-900);
+  font-weight: 700;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--cyan-600);
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.btn1::before {
+  transform: scaleX(0);
+}
+
+.btn1:hover::before {
+  transform: scaleX(1);
+}
+
+#canvas {
+  position: absolute;
+  left: 0;
+  width: 1366;
+  max-width: 100%;
+  height: 277;
+  z-index: -2;
+}
+
+@media (max-width: 700px) {
+  main {
+    height: auto;
+  }
+
+  .text {
+    padding: 2rem;
+    padding-bottom: 20rem;
+  }
+
+  .companyName {
+    padding: 2rem 0rem 2rem 0rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    padding: 2rem 0rem 2rem 0rem;
+  }
+
+  .text a {
+    width: 9rem;
+
+    padding: 1rem;
+    font-size: 10px;
+  }
+}
