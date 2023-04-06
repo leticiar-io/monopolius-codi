@@ -1,0 +1,63 @@
+body {
+  overflow-x: hidden;
+}
+
+.block .loaderTextWrapper, .preLoader {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+   width: 100%;
+   height: 105vh;
+ }
+ 
+ .loaderTextWrapper {
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: #000;
+ }
+ 
+ .loaderText {
+   font-family: 'Playfair Display', serif;
+   font-size: 12px;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 0.5em;
+   color: var(--red-800);
+ }
+ 
+ .revealer {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background-color: var(--cyan-600);
+ }
+ 
+ .preLoader {
+   
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: var(--gray-900);
+ }
+ 
+ .loaderWrapper {
+   position: relative;
+   width: 10px;
+   height: 140px;
+   background: var(--gray-700);
+   border-radius: 4px;
+   overflow: hidden;
+   transform: rotate(45deg);
+ }
+ 
+ .loader {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(100deg, var(--cyan-600) 0%, var(--red-800) 100%);
+ }
