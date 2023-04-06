@@ -1,4 +1,4 @@
-import { AiOutlineMenu, AiOutlineUser } from "react-icons/ai";
+import { motion } from "framer-motion";
 import "./Header.css";
 import { useState } from "react";
 
@@ -12,11 +12,56 @@ export function Header() {
         <div className="Navbar">
           <span className="nav-logo">monopolius sa</span>
           <div className={`nav-items ${isOpen && "open"}`}>
-            <a href="#">sobre</a>
-            <a href="#">perrynaitor</a>
-            <a href="#">fac</a>
-            <a href="#">sugestões</a>
-            <a href="#">contato</a>
+            <motion.a
+              href="#"
+              animate={{ y: 2}}
+              transition={{ ease: "linear", stiffness: 100, delay: 7 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+            >
+              sobre
+            </motion.a>
+            <motion.a
+              href="#"
+              animate={{ y: 2}}
+              transition={{ ease: "linear", stiffness: 100, delay: 8 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+            >
+              perrynaitor
+            </motion.a>
+            <motion.a
+              href="#"
+              animate={{ y: 2}}
+              transition={{ ease: "linear", stiffness: 100, delay: 9 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+            >
+              fac
+            </motion.a>
+            <motion.a
+              href="#"
+              animate={{ y: 2}}
+              transition={{ ease: "linear", stiffness: 100, delay: 10 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+            >
+              sugestões
+            </motion.a>
+            <motion.a
+              href="#"
+              animate={{ y: 2}}
+              transition={{ ease: "linear", stiffness: 100, delay: 11}}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+            >
+              contato
+            </motion.a>
           </div>
           <div
             className={`nav-toggle ${isOpen && "open"}`}
