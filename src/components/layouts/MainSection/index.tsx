@@ -8,11 +8,11 @@ export function MainSection() {
     <main>
       <div className="text">
         <motion.span
-                    animate={{ y: 50 }}
-                    transition={{ ease: "linear", stiffness: 100, delay: 10 }}
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
+          animate={{ y: 50 }}
+          transition={{ ease: "linear", stiffness: 100, delay: 7 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           className="companyName"
         >
           Monopolius SA
@@ -20,7 +20,7 @@ export function MainSection() {
         <motion.h1
           className="title"
           animate={{ y: 50 }}
-          transition={{ ease: "linear", stiffness: 100, delay: 9 }}
+          transition={{ ease: "linear", stiffness: 100, delay: 8 }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -32,7 +32,7 @@ export function MainSection() {
         <motion.span
           className="subtitle"
           animate={{ y: 50 }}
-          transition={{ ease: "linear", stiffness: 100, delay: 8 }}
+          transition={{ ease: "linear", stiffness: 100, delay: 9 }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -44,16 +44,16 @@ export function MainSection() {
           href="#"
           className="btn btn1"
           animate={{ y: 50 }}
-          transition={{ ease: "linear", stiffness: 100, delay: 7 }}
+          transition={{ ease: "linear", stiffness: 100, delay: 10 }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          SIGA-NOS NO INSTAGRAM!
+          VEJA NOSSOS PRODUTOS
         </motion.a>
       </div>
 
-      <canvas id="canvas"></canvas>
+       <canvas id="canvas"></canvas> 
     </main>
   );
 }
