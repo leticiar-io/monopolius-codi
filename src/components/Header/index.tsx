@@ -15,7 +15,7 @@ export function Header() {
             <motion.a
               href="#"
               animate={{ y: 2}}
-              transition={{ ease: "linear", stiffness: 100, delay: 7 }}
+              transition={{ ease: "linear", stiffness: 100, delay: 1 }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -25,7 +25,7 @@ export function Header() {
             <motion.a
               href="#"
               animate={{ y: 2}}
-              transition={{ ease: "linear", stiffness: 100, delay: 8 }}
+              transition={{ ease: "linear", stiffness: 100, delay: 2 }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -35,7 +35,7 @@ export function Header() {
             <motion.a
               href="#"
               animate={{ y: 2}}
-              transition={{ ease: "linear", stiffness: 100, delay: 9 }}
+              transition={{ ease: "linear", stiffness: 100, delay: 3 }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -45,7 +45,7 @@ export function Header() {
             <motion.a
               href="#"
               animate={{ y: 2}}
-              transition={{ ease: "linear", stiffness: 100, delay: 10 }}
+              transition={{ ease: "linear", stiffness: 100, delay: 4 }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -55,7 +55,7 @@ export function Header() {
             <motion.a
               href="#"
               animate={{ y: 2}}
-              transition={{ ease: "linear", stiffness: 100, delay: 11}}
+              transition={{ ease: "linear", stiffness: 100, delay: 5}}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
