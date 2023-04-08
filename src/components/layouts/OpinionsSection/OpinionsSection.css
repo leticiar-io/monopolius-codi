@@ -1,0 +1,401 @@
+.cols {
+  display: flex;
+  justify-content: space-between;
+}
+
+form input {
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid var(--gray-100);
+  background-color: var(--gray-900);
+  border-radius: 10px;
+
+  color: var(--white);
+}
+
+form div {
+  margin-top: 3rem;
+}
+
+form textarea {
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid var(--gray-100);
+  background-color: var(--gray-900);
+  border-radius: 10px;
+}
+
+.opinionsHeader {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.opinionsHeader h6 {
+  margin-right: 1rem;
+  font-size: 2rem;
+
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.opinionsHeader u {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 900;
+
+  letter-spacing: 2px;
+  color: var(--gray-100);
+}
+
+.opinionsContainer .colLeft {
+  width: 50%;
+}
+
+.opinionsContainer .colRight {
+  width: 50%;
+}
+
+.opinionsContainer .colRight img {
+  width: 35rem;
+  height: 35rem;
+
+  object-fit: cover;
+
+  border-radius: 5px;
+}
+
+form button {
+  border: 1px solid;
+  border-radius: 5px;
+  color: var(--cyan-600);
+  width: 15rem;
+
+  padding: 1rem 0rem 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  transition: color 0.4s linear;
+
+  font-size: 10px;
+  text-transform: uppercase;
+
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--gray-900);
+  font-weight: 700;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--cyan-600);
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.btn1::before {
+  transform: scaleX(0);
+}
+
+.btn1:hover::before {
+  transform: scaleX(1);
+}
+
+/* RESPONSIVE */
+
+/* Extra Extra small devices (Galaxy Fold) */
+@media (min-width: 200px) and (max-width: 369px) {
+  .opinionsContainer {
+    padding: 2rem 2rem 5rem 2rem;
+  }
+
+  .opinionsHeader h6 {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  form button {
+    width: 10rem;
+  }
+
+  .opinionsHeader u {
+    font-size: 1.5rem;
+  }
+
+  .opinionsContainer .cols {
+    margin-top: 0.5rem;
+  }
+
+  .opinionsContainer .colRight {
+    width: 0%;
+  }
+
+  .opinionsContainer .colLeft {
+    width: 100%;
+  }
+
+  .opinionsContainer .colRight img {
+    display: none;
+  }
+
+  form div {
+    margin-top: 1rem;
+  }
+
+  form input {
+    font-size: 1rem;
+  }
+
+  form textarea {
+    font-size: 1rem;
+  }
+}
+
+/* Extra small devices (phones, 700px and down) */
+@media (min-width: 370px) and (max-width: 700px) {
+  .opinionsContainer {
+    padding: 2rem 3rem 5rem 3rem;
+  }
+
+  .opinionsHeader h6 {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  form button {
+    width: 15rem;
+  }
+
+  .opinionsHeader u {
+    font-size: 2.4rem;
+  }
+
+  .opinionsContainer .colRight {
+    width: 0%;
+  }
+
+  .opinionsContainer .colLeft {
+    width: 100%;
+  }
+
+  .opinionsContainer .colRight img {
+    display: none;
+  }
+
+  form div {
+    margin-top: 1rem;
+  }
+
+  form input {
+    font-size: 1rem;
+  }
+
+  form textarea {
+    font-size: 1rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .opinionsContainer {
+    padding: 2rem 3rem 5rem 3rem;
+  }
+
+  .opinionsHeader h6 {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  form button {
+    width: 15rem;
+  }
+
+  .opinionsHeader u {
+    font-size: 2.4rem;
+  }
+
+  .opinionsContainer .colRight {
+    width: 0%;
+  }
+
+  .opinionsContainer .colLeft {
+    width: 100%;
+  }
+
+  .opinionsContainer .colRight img {
+    display: none;
+  }
+
+  form div {
+    margin-top: 1rem;
+  }
+
+  form input {
+    font-size: 1rem;
+  }
+
+  form textarea {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .opinionsContainer {
+    padding: 2rem 5rem 5rem 5rem;
+  }
+
+  .cols {
+    margin-top: 2.5rem;
+  }
+
+  .opinionsContainer .colRight {
+    width: 45%;
+  }
+
+  .opinionsContainer .colLeft {
+    width: 75%;
+  }
+
+  .opinionsContainer .colRight img {
+    width: 15rem;
+    height: 30rem;
+  }
+
+  form div {
+    margin-top: 1rem;
+  }
+
+  form input,
+  textarea {
+    font-size: 1.1rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1207px) {
+  .opinionsContainer {
+    padding: 2rem 10rem 5rem 10rem;
+  }
+
+  .cols {
+    margin-top: 2.5rem;
+  }
+
+  .opinionsContainer .colRight img {
+    width: 20rem;
+    height: 29rem;
+  }
+
+  form div {
+    margin-top: 1rem;
+  }
+  form input {
+    font-size: 1.25rem;
+  }
+  form textarea {
+    font-size: 1.25rem;
+  }
+}
+
+/* Extra large, but medium, devices (large laptops and desktops, 1208px and up)*/
+@media (min-width: 1208px) and (max-width: 1999px) {
+  .opinionsContainer {
+    padding: 2rem 10rem 5rem 10rem;
+  }
+
+  .cols {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 2.5rem;
+  }
+
+  .opinionsContainer .colRight img {
+    width: 25rem;
+    height: 33rem;
+  }
+
+  form div {
+    margin-top: 1.2rem;
+  }
+  form input {
+    font-size: 1.25rem;
+  }
+
+  form textarea {
+    font-size: 1.25rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1500px and up)*/
+@media (min-width: 1500px) and (max-width: 1799px) {
+  .opinionsContainer {
+    padding: 2rem 20rem 5rem 20rem;
+  }
+
+  .cols {
+    margin-top: 2.5rem;
+  }
+
+  .opinionsContainer .colRight img {
+    width: 25rem;
+    height: 33rem;
+  }
+
+  form div {
+    margin-top: 1.5rem;
+  }
+  form input {
+    font-size: 1.25rem;
+  }
+
+  form textarea {
+    font-size: 1.25rem;
+  }
+}
+
+/* Extra Extra large devices (extra extra large laptops and desktops, 1800px and up)*/
+@media (min-width: 1800px) {
+  .opinionsContainer {
+    padding: 2rem 20rem 5rem 20rem;
+  }
+
+  .cols {
+    margin-top: 2.5rem;
+  }
+
+  .opinionsContainer .colRight img {
+    width: 35rem;
+    height: 35rem;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+  }
+
+  form textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  form input {
+    font-size: 1.25rem;
+  }
+
+  form textarea {
+    font-size: 1.25rem;
+  }
+}
