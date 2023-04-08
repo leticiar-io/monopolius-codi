@@ -1,0 +1,582 @@
+.perrynaitorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+  margin-top: 12rem;
+}
+
+.perrynaitorHeader {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.perrynaitorHeader h6 {
+  margin-right: 1rem;
+  font-size: 2rem;
+
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.perrynaitorHeader u {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 900;
+
+  letter-spacing: 2px;
+  color: var(--gray-100);
+}
+
+.perrynaitorContent {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.img-wrapper {
+  width: auto;
+  overflow: hidden;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.perryImg {
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.perryImg img {
+  transition: 0.3s;
+}
+
+.perryImg:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.colRight {
+  font-size: 1rem;
+  margin-left: 2rem;
+
+  letter-spacing: 1.4px;
+}
+
+.modalVideo {
+  border: none;
+  padding-top: 2rem;
+}
+
+.link a {
+  border: 1px solid;
+  border-radius: 5px;
+  color: var(--red-800);
+  width: 15rem;
+
+  padding: 1rem 0rem 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  transition: color 0.4s linear;
+
+  font-size: 10px;
+  text-transform: uppercase;
+
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.buyBtn:hover {
+  color: var(--white);
+  font-weight: 700;
+  border-color: var(--red-800);
+}
+
+.buyBtn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--red-800);
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.buyBtn1::before {
+  transform: scaleX(0);
+}
+
+.buyBtn1:hover::before {
+  transform: scaleX(1);
+}
+
+.colRight p {
+  margin-bottom: 1rem;
+}
+
+.modalBtn {
+  color: var(--cyan-600);
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+  .aboutContainer {
+    padding: 1rem;
+  }
+
+  .perrynaitorHeader h6 {
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+
+  .aboutHeader u {
+    font-size: 1.6rem;
+  }
+
+  .perrynaitorContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imgBx {
+    width: 21rem;
+    height: 18rem;
+  }
+
+  .itemHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0rem 5px 0rem;
+    border-bottom: 1px dashed var(--gray-100);
+  }
+
+  .colRight {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 3rem;
+    margin-left: 0rem;
+  }
+
+  .leftCircle {
+    display: none;
+  }
+
+  .imagesGallery {
+    display: none;
+  }
+}
+
+/* Extra Extra small devices (Galaxy Fold) */
+@media (min-width: 200px) and (max-width: 369px) {
+  .perrynaitorContainer {
+    padding: 2rem 2rem 5rem 2rem;
+
+    background-color: midnightblue;
+  }
+
+  .perrynaitorHeader h6 {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .perrynaitorHeader u {
+    font-size: 1.5rem;
+  }
+
+  .perrynaitorContent {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+
+  .img-wrapper {
+    width: 14rem;
+    height: 10rem;
+
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .img-wrapper img {
+    width: 14rem;
+    height: 10rem;
+
+    object-fit: cover;
+  }
+
+  .perryImg {
+    margin: 1rem 0rem 1rem 0rem;
+  }
+
+  .colRight {
+    font-size: 12px;
+  }
+
+  .link a {
+    width: 10rem;
+  }
+}
+
+/* Extra small devices (phones, 700px and down) */
+@media (min-width: 370px) and (max-width: 599px) {
+  .perrynaitorContainer {
+    padding: 2rem 3rem 5rem 3rem;
+  }
+
+  .perrynaitorHeader h6 {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .perrynaitorHeader u {
+    font-size: 1.5rem;
+  }
+
+  .perrynaitorContent {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+
+  .img-wrapper {
+    width: 17rem;
+    height: 12rem;
+
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .img-wrapper img {
+    width: 17rem;
+    height: 10rem;
+
+    object-fit: cover;
+  }
+
+  .perryImg {
+    margin: 1rem 0rem 1rem 0rem;
+  }
+
+  .colRight {
+    font-size: 12px;
+  }
+
+  .link a {
+    width: 10rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .perrynaitorContainer {
+    padding: 2rem 3rem 5rem 3rem;
+  }
+
+  .perrynaitorContent {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+
+  .perrynaitorHeader h6 {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .perrynaitorHeader u {
+    font-size: 1.5rem;
+  }
+
+
+  .img-wrapper {
+    width: 100%;
+    height: 20rem;
+
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .img-wrapper img {
+    width: 28rem;
+    height: 20rem;
+
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .perrynaitorContainer {
+    padding: 2rem 5rem 5rem 5rem;
+  }
+
+  .perrynaitorHeader h6 {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .perrynaitorHeader u {
+    font-size: 2.4rem;
+  }
+
+  .perrynaitorContent {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+
+  .img-wrapper {
+    width: 40rem;
+    height: 20rem;
+
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .img-wrapper img {
+    width: 40rem;
+    height: 20rem;
+
+    object-fit: cover;
+  }
+
+  .perryImg {
+    margin: 10px 0rem 10px 0rem;
+  }
+
+  .colRight {
+    font-size: 1rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
+  }
+
+  .link a {
+    width: 10rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1207px) {
+  .perrynaitorContainer {
+    padding: 2rem 5rem 5rem 5rem;
+  }
+
+  .perrynaitorHeader h6 {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .perrynaitorHeader u {
+    font-size: 2.4rem;
+  }
+
+  .perrynaitorContent {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+
+  .img-wrapper {
+    width: 40rem;
+    height: 20rem;
+
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .img-wrapper img {
+    width: 40rem;
+    height: 20rem;
+
+    object-fit: cover;
+  }
+
+  .perryImg {
+    margin: 10px 0rem 10px 0rem;
+  }
+
+  .colRight {
+    font-size: 1rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
+  }
+
+  .link a {
+    width: 10rem;
+  }
+}
+
+/* Extra large, but medium, devices (large laptops and desktops, 1200px and up)*/
+@media (min-width: 1208px) and (max-width: 1499px) {
+  .perrynaitorContainer {
+    padding: 2rem 10rem 5rem 10rem;
+  }
+
+  .perrynaitorHeader h6 {
+    margin-right: 1rem; margin-right: 1rem;
+    font-size: 2rem;
+  }
+  
+  .perrynaitorHeader u {
+    font-size: 3rem;
+  }
+  
+
+  .perrynaitorContent {
+    margin-top: 3rem;
+    display: flex;
+  }
+
+  .img-wrapper {
+    width: 30rem;
+    height: 20rem;
+
+    overflow: hidden;
+    display: inline-block;
+
+    margin-right: 2rem;
+  }
+
+  .img-wrapper img {
+    width: 30rem;
+    height: 20rem;
+
+    object-fit: cover;
+  }
+
+  .perryImg {
+    margin: 10px 0rem 10px 0rem;
+  }
+
+  .colRight {
+    font-size: 1.3rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
+  }
+
+  .link a {
+    width: 10rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)*/
+@media (min-width: 1500px) and (max-width: 1799px) {
+  .perrynaitorContainer {
+    padding: 2rem 20rem 5rem 20rem;
+  }
+
+  
+  .perrynaitorHeader h6 {
+    margin-right: 1rem; margin-right: 1rem;
+    font-size: 2rem;
+  }
+  
+  .perrynaitorHeader u {
+    font-size: 3rem;
+  }
+  
+
+  .perrynaitorContent {
+    margin-top: 3rem;
+    display: flex;
+  }
+
+  .img-wrapper {
+    width: 30rem;
+    height: 20rem;
+
+    overflow: hidden;
+    display: inline-block;
+
+    margin-right: 2rem;
+  }
+
+  .img-wrapper img {
+    width: 30rem;
+    height: 20rem;
+
+    object-fit: cover;
+  }
+
+  .perryImg {
+    margin: 10px 0rem 10px 0rem;
+  }
+
+  .colRight {
+    font-size: 1rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
+  }
+
+  .link a {
+    width: 20rem;
+  }
+}
+
+/* Extra Extra large devices (extra extra large laptops and desktops, 1800px and up)*/
+@media (min-width: 1800px) {
+  .perrynaitorContainer {
+    padding: 2rem 20rem 5rem 20rem;
+  }
+
+  .perrynaitorHeader h6 {
+    margin-right: 1rem; margin-right: 1rem;
+    font-size: 2rem;
+  }
+  
+  .perrynaitorHeader u {
+    font-size: 3rem;
+  }
+  
+
+  .perrynaitorContent {
+    margin-top: 3rem;
+    display: flex;
+  }
+
+  .img-wrapper {
+    width: 35rem;
+    height: 20rem;
+
+    overflow: hidden;
+    display: inline-block;
+
+    margin-right: 2rem;
+  }
+
+  .img-wrapper img {
+    width: 35rem;
+    height: 20rem;
+
+    object-fit: cover;
+  }
+
+  .perryImg {
+    margin: 10px 0rem 10px 0rem;
+  }
+
+  .colRight {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+
+  .link a {
+    width: 20rem;
+  }
+}
