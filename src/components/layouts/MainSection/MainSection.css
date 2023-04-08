@@ -22,7 +22,7 @@ main {
 .companyName {
   color: var(--gray-100);
   font-weight: 400;
-  padding: 2rem 0rem 2rem 0rem;
+  padding: 2rem 0rem 0rem 0rem;
 }
 
 .title {
@@ -86,7 +86,6 @@ main {
   transform: scaleX(1);
 }
 
-
 #canvas {
   position: absolute;
   left: 0;
@@ -109,7 +108,7 @@ main {
   }
 
   .companyName {
-    padding: 2rem 0rem 2rem 0rem;
+    padding: 2rem 0rem 0rem 0rem;
   }
 
   .text .title {
@@ -166,21 +165,21 @@ main {
 
   .text {
     padding: 10rem 0rem 10rem 2rem;
-  } 
+  }
 
   .companyName {
     padding: 0rem 0rem 2rem 0rem;
     margin-bottom: 2rem;
   }
-  
+
   .title {
     font-size: 3em;
   }
-  
+
   .subtitle {
     padding: 2rem 0rem 2rem 0rem;
   }
-  
+
   .text a {
     width: 15rem;
   }
@@ -193,21 +192,21 @@ main {
   }
   .text {
     padding: 5rem 0rem 10rem 2rem;
-  } 
+  }
 
   .companyName {
     padding: 0rem 0rem 2rem 0rem;
     margin-bottom: 2rem;
   }
-  
+
   .title {
     font-size: 3em;
   }
-  
+
   .subtitle {
     padding: 2rem 0rem 2rem 0rem;
   }
-  
+
   .text a {
     width: 15rem;
   }
@@ -221,21 +220,21 @@ main {
 
   .text {
     padding: 5rem 0rem 10rem 2rem;
-  } 
+  }
 
   .companyName {
     padding: 0rem 0rem 2rem 0rem;
     margin-bottom: 2rem;
   }
-  
+
   .title {
     font-size: 3em;
   }
-  
+
   .subtitle {
     padding: 2rem 0rem 2rem 0rem;
   }
-  
+
   .text a {
     width: 15rem;
   }
@@ -248,21 +247,21 @@ main {
 
   .text {
     padding: 0rem 0rem 8rem 2rem;
-  } 
+  }
 
   .companyName {
     padding: 0rem 0rem 2rem 0rem;
     margin-bottom: 2rem;
   }
-  
+
   .title {
     font-size: 3em;
   }
-    
+
   .subtitle {
     padding: 1rem 0rem 2rem 0rem;
   }
-  
+
   .text a {
     width: 15rem;
   }
@@ -273,19 +272,19 @@ main {
   main {
     height: 80vh;
   }
-  
+
   .text {
     padding: 10rem 0rem 15rem 2rem;
   }
-  
+
   .companyName {
     padding: 2rem 0rem 4.5rem 0rem;
   }
-  
+
   .title {
     font-size: 3.5rem;
   }
-    
+
   .subtitle {
     padding: 1rem 0rem 3rem 0rem;
   }
@@ -296,34 +295,35 @@ main {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up)*/
-@media only screen and (min-width: 1200px) { 
+@media only screen and (min-width: 1200px) {
   main {
     height: 95vh;
   }
-  
+
   .text {
     padding: 2rem 0rem 20rem 10rem;
   }
 }
 
 /* Extra Extra large devices (extra large laptops and desktops, 1500px and up)*/
-@media only screen and (min-width: 1800px) { 
+@media only screen and (min-width: 1800px) {
   main {
     height: 95vh;
   }
-  
+
   .text {
     padding: 0rem 0rem 10rem 20rem;
   }
 
   .companyName {
     font-size: 1.2rem;
+    padding: 2rem 0rem 0rem 0rem;
   }
-  
+
   .title {
     font-size: 5rem;
   }
-    
+
   .subtitle {
     font-size: 1.2rem;
     padding: 1rem 0rem 3rem 0rem;
