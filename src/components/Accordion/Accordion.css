@@ -1,0 +1,188 @@
+button,
+h3 {
+  all: unset;
+}
+
+.AccordionRoot {
+  border-radius: 6px;
+
+  background-color: var(--mauve6);
+  box-shadow: 0 2px 10px var(--blackA4);
+}
+
+.AccordionItem {
+  overflow: hidden;
+  margin-top: 1px;
+  margin: 3rem 0rem 2rem 0rem;
+}
+
+.AccordionItemTitle {
+  font-size: 1.25rem;
+  padding: 2rem;
+  border: 1px solid var(--gray-100);
+  width: 75%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.AccordionItemContent {
+  margin: 3rem 0rem 2rem 0rem;
+}
+
+.AccordionItem:first-child {
+  margin-top: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.AccordionItem:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.AccordionItem:focus-within {
+  position: relative;
+  z-index: 1;
+}
+
+.AccordionHeader {
+  display: flex;
+}
+
+.AccordionItemTitle:focus-within > .AccordionChevron {
+  transform: rotate(180deg);
+}
+
+.AccordionChevron {
+  transition: transform 300ms;
+}
+
+
+/* Extra Extra small devices (Galaxy Fold) */
+@media (min-width: 200px) and (max-width: 369px) {
+  
+  .AccordionItem {
+    overflow: hidden;
+    margin-top: 1px;
+  }
+  
+  .AccordionItemTitle {
+    font-size: 12px;
+    padding: 10px;
+    width: 70%;
+  }
+  
+  .AccordionItemContent {
+    margin: 2rem 0rem 2rem 0rem;
+    font-size: 12px;
+  }
+
+  .AccordionChevron {
+    font-size: 3rem;
+    margin-left: 5px;
+
+  }
+  
+}
+
+/* Extra small devices (phones, 700px and down) */
+@media (min-width: 370px) and (max-width: 700px) {
+  .AccordionItem {
+    margin-top: 1px;
+  }
+  
+  .AccordionItemTitle {
+    font-size: 10px;
+    padding: 10px;
+    width: 15rem;
+  }
+  
+  .AccordionItemContent {
+    margin: 2rem 0rem 2rem 0rem;
+    font-size: 12px;
+  }
+
+  .AccordionChevron {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) and (max-width: 991px) {
+  .AccordionItem {
+    margin-top: 0px;
+  }
+  
+  .AccordionItemTitle {
+    font-size: 12px;
+    padding: 10px;
+    width: 28rem;
+  }
+  
+  .AccordionItemContent {
+    margin: 2rem 0rem 2rem 0rem;
+    font-size: 12px;
+  }
+
+  .AccordionChevron {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  .AccordionRoot {
+    margin-top: 2rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1207px) {
+  .AccordionItem {
+    margin-top: 0px;
+  }
+  
+  .AccordionItemTitle {
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 90%;
+  }
+  
+  .AccordionItemContent {
+    margin: 2rem 0rem 2rem 0rem;
+    font-size: 12px;
+  }
+
+  .AccordionChevron {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  .AccordionRoot {
+    margin-top: 2rem;
+  }
+}
+
+/* Extra large, but medium, devices (large laptops and desktops, 1200px and up)*/
+@media (min-width: 1208px) and (max-width: 1999px) {
+  .AccordionItemTitle {
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 90%;
+  }
+  
+  .AccordionItemContent {
+    margin: 2rem 0rem 2rem 0rem;
+    font-size: 14px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)*/
+@media (min-width: 1500px) and (max-width: 1799px) {
+
+}
+
+/* Extra Extra large devices (extra extra large laptops and desktops, 1800px and up)*/
+@media (min-width: 1800px) {
+
+}
