@@ -1,9 +1,9 @@
 .nav-logo {
   text-transform: uppercase;
   font-size: 1.1rem;
-  padding: 1rem 1.30rem 1rem 1.30rem;
+  padding: 1rem 1.3rem 1rem 1.3rem;
   border: 1px solid;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 .Navbar {
@@ -16,7 +16,7 @@
   background: var(--gray-900);
 }
 
- .nav-items {
+.nav-items {
   margin: 0px;
   padding: 0px;
 }
@@ -51,7 +51,6 @@
   width: 100%;
 }
 
-
 .Navbar > .nav-toggle {
   display: none;
 }
@@ -71,28 +70,23 @@
     width: 100%;
     height: 100%;
     transform: translateX(-100%);
-    transition: all .45s;
+    transition: all 0.45s;
   }
 
   .Navbar > .nav-items > a {
-
     margin: 2px;
     font-size: 1.2rem;
     opacity: 0.9;
-  
+
     background-color: var(--gray-900);
-  
   }
 
   .Navbar > .nav-items > a::before {
-      background: transparent;
-      
+    background: transparent;
   }
 
   .Navbar > .nav-items.open {
-      transform: translateX(0);
-      
-
+    transform: translateX(0);
   }
 
   .Navbar > .nav-toggle {
@@ -102,7 +96,6 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    
   }
 
   .nav-toggle > .bar {
@@ -135,16 +128,79 @@
   }
 
   .nav-toggle.open > .bar {
-      transform: translateX(-40px);
-      background: var(--gray-900);
+    transform: translateX(-40px);
+    background: var(--gray-900);
   }
 
   .nav-toggle.open > .bar::before {
-      width: 32px;
-      transform: rotate(45deg) translate(26px, -26px);
+    width: 32px;
+    transform: rotate(45deg) translate(26px, -26px);
   }
 
   .nav-toggle.open > .bar::after {
     transform: rotate(-45deg) translate(26px, 26px);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .Navbar {
+    padding: 2rem 2rem 0rem 2rem;
+  }
+
+  .Navbar > .nav-items > a {
+    font-size: 13px;
+  }
+
+  .nav-logo {
+    font-size: 1rem;
+    padding: 8px 1.1rem 8px 1.1rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .Navbar {
+    padding: 2rem 2rem 0rem 2rem;
+  }
+
+  .Navbar > .nav-items > a {
+    font-size: 14px;
+  }
+
+  .nav-logo {
+    font-size: 1rem;
+    padding: 8px 1.1rem 8px 1.1rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)*/
+@media only screen and (min-width: 1200px) {
+  .Navbar {
+    padding: 2rem 10rem 2rem 10rem;
+  }
+
+  .text {
+    padding: 2rem 0rem 20rem 10rem;
+  }
+
+  .Navbar > .nav-items > a {
+    font-size: 1rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 100px and up)*/
+@media only screen and (min-width: 1700px) {
+  .Navbar {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 20rem 2rem 20rem;
+  }
+
+  .Navbar > .nav-items > a {
+    font-size: 1.2rem;
   }
 }

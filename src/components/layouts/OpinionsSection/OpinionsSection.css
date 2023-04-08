@@ -175,12 +175,12 @@ form button {
     font-size: 1rem;
   }
 
-  form button {
-    width: 15rem;
+  .opinionsHeader u {
+    font-size: 1.5rem;
   }
 
-  .opinionsHeader u {
-    font-size: 2.4rem;
+  form button {
+    width: 15rem;
   }
 
   .opinionsContainer .colRight {
@@ -272,6 +272,8 @@ form button {
   .opinionsContainer .colRight img {
     width: 15rem;
     height: 30rem;
+
+    margin-left: 2rem;
   }
 
   form div {
@@ -297,6 +299,8 @@ form button {
   .opinionsContainer .colRight img {
     width: 20rem;
     height: 29rem;
+
+    margin-left: 2rem;
   }
 
   form div {
@@ -326,6 +330,8 @@ form button {
   .opinionsContainer .colRight img {
     width: 25rem;
     height: 33rem;
+
+    margin-left: 2rem;
   }
 
   form div {

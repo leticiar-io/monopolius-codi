@@ -61,7 +61,6 @@ h3 {
 
 /* Extra Extra small devices (Galaxy Fold) */
 @media (min-width: 200px) and (max-width: 369px) {
-  
   .AccordionItem {
     overflow: hidden;
     margin-top: 1px;
@@ -175,14 +174,4 @@ h3 {
     margin: 2rem 0rem 2rem 0rem;
     font-size: 14px;
   }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up)*/
-@media (min-width: 1500px) and (max-width: 1799px) {
-
-}
-
-/* Extra Extra large devices (extra extra large laptops and desktops, 1800px and up)*/
-@media (min-width: 1800px) {
-
 }
