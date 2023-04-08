@@ -14,11 +14,11 @@ export function AboutSection() {
     <div className="aboutContainer">
       <motion.div
         className="aboutHeader"
-        animate={{ y: 50 }}
+/*         animate={{ y: 50 }}
         transition={{ ease: "linear", stiffness: 100, delay: 11 }}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
+        viewport={{ once: true }} */
       >
         <h6>01.</h6>
         <u>sobre nós</u>
@@ -27,11 +27,11 @@ export function AboutSection() {
       <div className="aboutContent">
         <motion.div
           className="colLeft"
-          animate={{ y: 50 }}
+/*           animate={{ y: 50 }}
           transition={{ ease: "linear", stiffness: 100, delay: 12 }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
+          viewport={{ once: true }} */
         >
           <div className="itemHeader">
             <div className="itemHeader-heading">
@@ -57,11 +57,11 @@ export function AboutSection() {
 
         <div className="colRight">
           <motion.p
-            animate={{ y: 50 }}
+/*             animate={{ y: 50 }}
             transition={{ ease: "linear", stiffness: 100, delay: 13 }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: true }} */
           >
             Olá, prazer em te conhecer! <br />
             <br />
@@ -76,11 +76,11 @@ export function AboutSection() {
           <motion.a
             href="#"
             className="btn btn1"
-            animate={{ y: 50 }}
+/*             animate={{ y: 50 }}
             transition={{ ease: "linear", stiffness: 100, delay: 14 }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: true }} */
           >
             VEJA NOSSO INSTAGRAM
           </motion.a>
@@ -88,11 +88,11 @@ export function AboutSection() {
           <div className="imagesGallery">
             <motion.div
               className="imgBx imgBx2"
-              animate={{ y: 50 }}
+/*               animate={{ y: 50 }}
               transition={{ ease: "linear", stiffness: 100, delay: 15 }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: true }} */
             >
               <img src={photo3} alt="" />
               <img src={photo4} alt="" />
@@ -100,11 +100,11 @@ export function AboutSection() {
 
             <motion.div
               className="imgBx imgBx3"
-              animate={{ y: 50 }}
+/*               animate={{ y: 50 }}
               transition={{ ease: "linear", stiffness: 100, delay: 16 }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: true }} */
             >
               <img src={photo5} alt="" />
               <img src={photo2} alt="" />
