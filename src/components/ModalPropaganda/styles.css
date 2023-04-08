@@ -1,0 +1,264 @@
+.DialogOverlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.DialogContent {
+  min-width: 60rem;
+  height: 45rem;
+  border-radius: 6px;
+  padding: 4rem 3rem;
+  background: var(--gray-800);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.DialogTitle {
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+.IconButton {
+  position: absolute;
+  background: transparent;
+  border: 0;
+  top: 1.5rem;
+  right: 1.5rem;
+  line-height: 0;
+  cursor: pointer;
+
+  font-size: 2rem;
+  color: var(--white);
+}
+
+/* RESPONSIVE */
+
+/* Extra Extra small devices (Galaxy Fold) */
+@media (min-width: 200px) and (max-width: 369px) {
+  .DialogOverlay {
+    position: absolute;
+    width: 100%;
+    height: 50rem;
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  .DialogContent iframe {
+    width: 14rem;
+    height: 20rem;
+  }
+
+  .DialogContent {
+    min-width: 0rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    padding: 4rem 1rem;
+    background: var(--gray-800);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Extra small devices (phones, 700px and down) */
+@media (min-width: 370px) and (max-width: 599px) {
+  .DialogOverlay {
+    position: absolute;
+    width: 100%;
+    height: 50rem;
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  .DialogContent iframe {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .DialogContent {
+    min-width: 0rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    padding: 4rem 1rem;
+    background: var(--gray-800);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) and (max-width: 767px) {
+   .DialogOverlay {
+      position: absolute;
+      width: 100%;
+      height: 50rem;
+      background: rgba(0, 0, 0, 0.75);
+    }
+  
+    .DialogContent iframe {
+      width: 100%;
+      height: 20rem;
+    }
+  
+    .DialogContent {
+      min-width: 0rem;
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+      padding: 4rem 1rem;
+      background: var(--gray-800);
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+ }
+ 
+ @media (min-width: 768px) and (max-width: 991px) {
+   .DialogOverlay {
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+    }
+  
+    .DialogContent iframe {
+      width: 90%;
+      height: 20rem;
+    }
+  
+    .DialogContent {
+      min-width: 0rem;
+      width: 45rem;
+      height: 35rem;
+      border-radius: 6px;
+      padding: 4rem 1rem;
+      background: var(--gray-800);
+      position: fixed;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+    }
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media (min-width: 992px) and (max-width: 1207px) {
+   .DialogOverlay {
+      position: absolute;
+      width: 100%;
+      height: 50rem;
+      background: rgba(0, 0, 0, 0.75);
+    }
+  
+    .DialogContent iframe {
+      width: 100%;
+      height: 40rem;
+    }
+  
+    .DialogContent {
+      min-width: 0rem;
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+      padding: 4rem 1rem;
+      background: var(--gray-800);
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+ }
+ 
+ /* Extra large, but medium, devices (large laptops and desktops, 1200px and up)*/
+ @media (min-width: 1208px) and (max-width: 1999px) {
+   .DialogOverlay {
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+    }
+  
+    .DialogContent iframe {
+      width: 100%;
+      height: 50rem;
+    }
+  
+    .DialogContent {
+      min-width: 0rem;
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+      padding: 4rem 1rem;
+      background: var(--gray-800);
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up)*/
+ @media (min-width: 1500px) and (max-width: 1799px) {
+   .DialogOverlay {
+      position: fixed;
+      width: 100vw;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+    }
+  
+    .DialogContent iframe {
+      width: 100%;
+      height: 50rem;
+    }
+  
+    .DialogContent {
+      min-width: 0rem;
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+      padding: 4rem 1rem;
+      background: var(--gray-800);
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+ }
+ 
+ /* Extra Extra large devices (extra extra large laptops and desktops, 1800px and up)*/
+ @media (min-width: 1800px) {
+   .DialogOverlay {
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+    }
+  
+    .DialogContent iframe {
+      width: 100%;
+      height: 45rem;
+    }
+  
+    .DialogContent {
+      min-width: 0rem;
+      width: 90%;
+      height: 90%;
+      border-radius: 6px;
+      padding: 4rem 1rem;
+      background: var(--gray-800);
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+ }
+ 
