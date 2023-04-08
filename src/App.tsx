@@ -8,19 +8,18 @@ import { OpinionsSection } from "./components/layouts/OpinionsSection";
 import { ContactUsSection } from "./components/layouts/ContactUsSection";
 
 import "./App.css";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div>
       <Header />
       <div className="content">
-
-
-      <MainSection />
-      <AboutSection />
-      <PerrynaitorSection />
-      <QuestionsSection />
-      <OpinionsSection />
+        <MainSection />
+        <AboutSection />
+        <PerrynaitorSection />
+        <QuestionsSection />
+        <OpinionsSection />
       </div>
 
       <ContactUsSection />

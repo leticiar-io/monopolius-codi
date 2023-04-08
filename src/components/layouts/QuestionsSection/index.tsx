@@ -3,7 +3,7 @@ import "./QuestionsSection.css";
 
 export function QuestionsSection() {
   return (
-    <div className="facContainer">
+    <div className="facContainer" id="fac">
       <div className="facHeader">
         <h6>03.</h6>
         <u>Perguntas frequentes</u>

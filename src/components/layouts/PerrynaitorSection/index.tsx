@@ -8,7 +8,7 @@ import { ModalPropaganda } from "../../ModalPropaganda";
 
 export function PerrynaitorSection() {
   return (
-    <div className="perrynaitorContainer">
+    <div className="perrynaitorContainer" id="perrynaitor">
       <motion.div
         className="perrynaitorHeader"
         /*         animate={{ y: 50 }}

@@ -13,9 +13,9 @@ export function Header() {
           <span className="nav-logo">monopolius sa</span>
           <div className={`nav-items ${isOpen && "open"}`}>
             <motion.a
-              href="#"
+              href="#about"
               animate={{ y: 2}}
-              transition={{ ease: "linear", stiffness: 100, delay: 1 }}
+              transition={{ ease: "linear", stiffness: 100, delay: 1, duration: 0.5 }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -23,7 +23,7 @@ export function Header() {
               sobre
             </motion.a>
             <motion.a
-              href="#"
+              href="#perrynaitor"
               animate={{ y: 2}}
               transition={{ ease: "linear", stiffness: 100, delay: 2 }}
               initial={{ opacity: 0 }}
@@ -33,7 +33,7 @@ export function Header() {
               perrynaitor
             </motion.a>
             <motion.a
-              href="#"
+              href="#fac"
               animate={{ y: 2}}
               transition={{ ease: "linear", stiffness: 100, delay: 3 }}
               initial={{ opacity: 0 }}
@@ -43,7 +43,7 @@ export function Header() {
               fac
             </motion.a>
             <motion.a
-              href="#"
+              href="#opinions"
               animate={{ y: 2}}
               transition={{ ease: "linear", stiffness: 100, delay: 4 }}
               initial={{ opacity: 0 }}
@@ -53,7 +53,7 @@ export function Header() {
               sugestões
             </motion.a>
             <motion.a
-              href="#"
+              href="#contact"
               animate={{ y: 2}}
               transition={{ ease: "linear", stiffness: 100, delay: 5}}
               initial={{ opacity: 0 }}

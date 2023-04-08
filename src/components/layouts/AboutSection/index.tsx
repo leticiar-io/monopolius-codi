@@ -11,7 +11,7 @@ import photo6 from "../../../assets/photo6.png";
 
 export function AboutSection() {
   return (
-    <div className="aboutContainer">
+    <div className="aboutContainer" id="#about">
       <motion.div
         className="aboutHeader"
 /*         animate={{ y: 50 }}

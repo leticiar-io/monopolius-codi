@@ -35,7 +35,7 @@ export function OpinionsSection() {
   }
 
   return (
-    <div className="opinionsContainer">
+    <div className="opinionsContainer" id="opinions">
       <div className="opinionsHeader">
         <h6>02.</h6>
         <u>Sugestões</u>

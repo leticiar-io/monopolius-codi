@@ -39,7 +39,7 @@ export function ContactUsSection() {
   }
 
   return (
-    <div className="contactContainer">
+    <div className="contactContainer" id="contact">
       <div className="contactHeader">
         <h6>05.</h6>
         <u>Contato</u>
