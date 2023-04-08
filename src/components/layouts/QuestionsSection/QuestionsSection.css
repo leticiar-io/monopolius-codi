@@ -1,0 +1,217 @@
+.facContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
+.facHeader {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.facHeader h6 {
+  margin-right: 1rem;
+  font-size: 2rem;
+
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.facHeader u {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 900;
+
+  letter-spacing: 2px;
+  color: var(--gray-100);
+}
+
+.facContent {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+}
+
+.facContent .colLeft {
+  width: 40%;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+
+.facContent .colRight {
+  font-size: 1.35rem;
+  margin-left: 2rem;
+  letter-spacing: 1.4px;
+  color: var(--gray-100);
+}
+
+.facContainer .colRight {
+   width: 70%;
+}
+
+
+/* RESPONSIVE */
+
+/* Extra Extra small devices (Galaxy Fold) */
+@media (min-width: 200px) and (max-width: 369px) {
+  .facContainer {
+    padding: 2rem 2rem 5rem 2rem;
+  }
+
+  .facHeader h6 {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .facHeader u {
+    font-size: 1.5rem;
+  }
+
+  .facContent {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+
+  .facContent .colRight {
+    margin-left: 0rem;
+  }
+
+  .facContainer .colRight {
+    width: 100%;
+  }
+
+  .facContainer .colLeft {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+/* Extra small devices (phones, 700px and down) */
+@media (min-width: 370px) and (max-width: 767px) {
+  .facContainer {
+    padding: 2rem 3rem 5rem 3rem;
+  }
+
+  .facHeader h6 {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .facHeader u {
+    font-size: 1.5rem;
+  }
+
+  .facContent {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+
+  .facContent .colRight {
+    margin-left: 0rem;
+  }
+
+  .facContainer .colRight {
+    width: 100%;
+  }
+
+  .facContainer .colLeft {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .facContainer {
+    padding: 2rem 5rem 5rem 5rem;
+  }
+
+  .facHeader h6 {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .facHeader u {
+    font-size: 1.5rem;
+  }
+
+  .facContent {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+
+  .facContent .colRight {
+    margin-left: 0rem;
+  }
+
+  .facContainer .colRight {
+    width: 100%;
+  }
+
+  .facContainer .colLeft {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1207px) {
+  .facContainer {
+    padding: 2rem 5rem 5rem 5rem;
+  }
+
+  .facContent {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+
+  .facContent .colRight {
+    margin-top: 1rem;
+  }
+
+  .facContainer .colRight {
+    width: 100%;
+    margin-left: 0rem;
+  }
+
+  .facContainer .colLeft {
+    width: 100%;
+  }
+}
+
+/* Extra large, but medium, devices (large laptops and desktops, 1200px and up)*/
+@media (min-width: 1208px) and (max-width: 1999px) {
+  .facContainer {
+    padding: 2rem 10rem 5rem 10rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)*/
+@media (min-width: 1500px) and (max-width: 1799px) {
+  .facContainer {
+    padding: 2rem 20rem 5rem 20rem;
+
+  }
+}
+
+/* Extra Extra large devices (extra extra large laptops and desktops, 1800px and up)*/
+@media (min-width: 1800px) {
+  .facContainer {
+    padding: 2rem 20rem 5rem 20rem;
+  }
+}
