@@ -2,8 +2,8 @@ import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
-import ideaImg from "../../../assets/photo9.jpg";
 import "./OpinionsSection.css";
+import ideaImg from "../../../assets/photo9.jpg";
 
 const newOpinionFormSchema = z.object({
   email: z.string().email("Este e-mail não é válido."),

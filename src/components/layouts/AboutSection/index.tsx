@@ -1,6 +1,5 @@
-import "./AboutSection.css";
-import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
+import "./AboutSection.css";
 
 import photo1 from "../../../assets/photo1.png";
 import photo2 from "../../../assets/photo7.png";
@@ -12,26 +11,16 @@ import photo6 from "../../../assets/photo6.png";
 export function AboutSection() {
   return (
     <div className="aboutContainer" id="#about">
-      <motion.div
+      <div
         className="aboutHeader"
-/*         animate={{ y: 50 }}
-        transition={{ ease: "linear", stiffness: 100, delay: 11 }}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }} */
       >
         <h6>01.</h6>
         <u>sobre nós</u>
-      </motion.div>
+      </div>
 
       <div className="aboutContent">
-        <motion.div
+        <div
           className="colLeft"
-/*           animate={{ y: 50 }}
-          transition={{ ease: "linear", stiffness: 100, delay: 12 }}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }} */
         >
           <div className="itemHeader">
             <div className="itemHeader-heading">
@@ -53,15 +42,10 @@ export function AboutSection() {
               <FiArrowUpRight />
             </div>
           </div>
-        </motion.div>
+        </div>
 
         <div className="colRight">
-          <motion.p
-/*             animate={{ y: 50 }}
-            transition={{ ease: "linear", stiffness: 100, delay: 13 }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }} */
+          <p
           >
             Olá, prazer em te conhecer! <br />
             <br />
@@ -71,44 +55,29 @@ export function AboutSection() {
             através da tecnologia. A Monopolius SA já participou de vários
             eventos internacionais e participações com vários artistas, dentre
             eles: BluePen e Google.
-          </motion.p>
+          </p>
 
-          <motion.a
+          <a
             href="#"
             className="btn btn1"
-/*             animate={{ y: 50 }}
-            transition={{ ease: "linear", stiffness: 100, delay: 14 }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }} */
           >
             VEJA NOSSO INSTAGRAM
-          </motion.a>
+          </a>
 
           <div className="imagesGallery">
-            <motion.div
+            <div
               className="imgBx imgBx2"
-/*               animate={{ y: 50 }}
-              transition={{ ease: "linear", stiffness: 100, delay: 15 }}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }} */
             >
               <img src={photo3} alt="" />
               <img src={photo4} alt="" />
-            </motion.div>
+            </div>
 
-            <motion.div
+            <div
               className="imgBx imgBx3"
-/*               animate={{ y: 50 }}
-              transition={{ ease: "linear", stiffness: 100, delay: 16 }}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }} */
             >
               <img src={photo5} alt="" />
               <img src={photo2} alt="" />
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

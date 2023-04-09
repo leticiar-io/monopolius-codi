@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import "./Header.css";
 import { useState } from "react";
 
-//import { NavLink } from 'react-router-dom'
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
