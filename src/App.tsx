@@ -8,28 +8,36 @@ import { OpinionsSection } from "./components/layouts/OpinionsSection";
 import { ContactUsSection } from "./components/layouts/ContactUsSection";
 
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function App() {
   return (
     <div>
       <Header />
-      <div className="content">
+      <motion.div
+        className="content"
+        transition={{ ease: "linear", stiffness: 100, delay: 7 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+      >
         <MainSection />
         <AboutSection />
         <PerrynaitorSection />
         <QuestionsSection />
         <OpinionsSection />
+        <ContactUsSection />
+
+        <footer>
+          <p>
+            Monoplius SA <span>&#169;</span> Todos os direitos reservados.
+          </p>
+        </footer>
+      </motion.div>
+
+      <div className="loading">
+        <Loading />
       </div>
-
-      <ContactUsSection />
-      {/*  <Loading />  */}
-
-      <footer>
-        <p>
-          Monoplius SA <span>&#169;</span> Todos os direitos reservados.
-        </p>
-      </footer>
     </div>
   );
 }
