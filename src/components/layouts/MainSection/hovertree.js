@@ -218,7 +218,7 @@
       target.x = event.clientX;
       target.y = event.clientY;
     }
-    event.preventDefault();
+   // event.preventDefault();
   }
 
   function touchstart(event) {
@@ -331,13 +331,13 @@
 /*     letters("h1");
     letters("h2"); */
 
-    document.addEventListener("mousemove", init);
-    document.addEventListener("touchstart", init);
+    document.addEventListener("mousemove", init,  {passive:false});
+    document.addEventListener("touchstart", init, {passive:false});
     document.body.addEventListener("orientationchange", resize);
-    window.addEventListener("resize", resize);
-    window.addEventListener("keyup", keyup);
-    window.addEventListener("focus", start);
-    window.addEventListener("blur", stop);
+    window.addEventListener("resize", resize,  {passive:false});
+    window.addEventListener("keyup", keyup,  {passive:false});
+    window.addEventListener("focus", start,  {passive:false});
+    window.addEventListener("blur", stop,  {passive:false});
 
     resize();
 
