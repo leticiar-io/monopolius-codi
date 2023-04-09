@@ -172,7 +172,7 @@
     ctx.strokeStyle = "hsla(" + Math.round(hue.update()) + ",90%,50%,0.25)";
     ctx.lineWidth = 1;
 
-    if (ctx.frame % 60 === 0) {
+/*     if (ctx.frame % 60 === 0) {
       console.log(
         hue.update(),
         Math.round(hue.update()),
@@ -181,7 +181,7 @@
         hue.frequency,
         hue.amplitude
       );
-    }
+    } */
 
     for (var i = 0, tendril; i < settings.trails; i++) {
       tendril = tendrils[i];
