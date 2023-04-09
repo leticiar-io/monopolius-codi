@@ -10,7 +10,7 @@ import photo6 from "../../../assets/photo6.png";
 
 export function AboutSection() {
   return (
-    <div className="aboutContainer" id="#about">
+    <div className="aboutContainer" id="about">
       <div
         className="aboutHeader"
       >
